@@ -1,0 +1,2636 @@
+[
+  {
+    "Instrument": "Piano",
+    "Content": [
+      {
+        "Pitch": 3,
+        "Volume": 0.84,
+        "StartTime": 0.5217391304347826,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 4,
+        "Volume": 0.84,
+        "StartTime": 0.7826086956521738,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 9,
+        "Volume": 0.84,
+        "StartTime": 1.0434782608695652,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 3,
+        "Volume": 0.84,
+        "StartTime": 2.608695652173913,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 4,
+        "Volume": 0.84,
+        "StartTime": 2.869565217391304,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 7,
+        "Volume": 0.84,
+        "StartTime": 3.1304347826086953,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 6,
+        "Volume": 0.84,
+        "StartTime": 3.3913043478260865,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 5,
+        "Volume": 0.84,
+        "StartTime": 3.6521739130434776,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 4,
+        "Volume": 0.84,
+        "StartTime": 3.9130434782608687,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 3,
+        "Volume": 0.84,
+        "StartTime": 4.17391304347826,
+        "Duration": 2.0869565217391304
+      },
+      {
+        "Pitch": 0,
+        "Volume": 0.84,
+        "StartTime": 6.260869565217391,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 3,
+        "Volume": 0.84,
+        "StartTime": 8.869565217391305,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 4,
+        "Volume": 0.84,
+        "StartTime": 9.130434782608695,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 9,
+        "Volume": 0.84,
+        "StartTime": 9.391304347826086,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 3,
+        "Volume": 0.84,
+        "StartTime": 10.956521739130434,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 4,
+        "Volume": 0.84,
+        "StartTime": 11.217391304347824,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 7,
+        "Volume": 0.84,
+        "StartTime": 11.478260869565215,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 6,
+        "Volume": 0.84,
+        "StartTime": 11.739130434782606,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 5,
+        "Volume": 0.84,
+        "StartTime": 11.999999999999996,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 4,
+        "Volume": 0.84,
+        "StartTime": 12.260869565217387,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 3,
+        "Volume": 0.84,
+        "StartTime": 12.521739130434778,
+        "Duration": 2.0869565217391304
+      },
+      {
+        "Pitch": 0,
+        "Volume": 0.84,
+        "StartTime": 14.608695652173909,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 2,
+        "Volume": 0.84,
+        "StartTime": 16.69565217391304,
+        "Duration": 1.565217391304348
+      },
+      {
+        "Pitch": 4,
+        "Volume": 0.84,
+        "StartTime": 18.260869565217387,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 5,
+        "Volume": 0.84,
+        "StartTime": 18.521739130434778,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -8,
+        "Volume": 0.84,
+        "StartTime": 18.78260869565217,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": 11,
+        "Volume": 0.84,
+        "StartTime": 19.30434782608695,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": 4,
+        "Volume": 0.84,
+        "StartTime": 19.82608695652173,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": 2,
+        "Volume": 0.84,
+        "StartTime": 20.347826086956513,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": 0,
+        "Volume": 0.84,
+        "StartTime": 20.869565217391294,
+        "Duration": 1.0434782608695652
+      },
+      {
+        "Pitch": 4,
+        "Volume": 0.84,
+        "StartTime": 21.91304347826086,
+        "Duration": 1.0434782608695652
+      },
+      {
+        "Pitch": 9,
+        "Volume": 0.84,
+        "StartTime": 22.956521739130427,
+        "Duration": 1.0434782608695652
+      },
+      {
+        "Pitch": 9,
+        "Volume": 0.84,
+        "StartTime": 25.04347826086956,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 8,
+        "Volume": 0.84,
+        "StartTime": 25.30434782608695,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 9,
+        "Volume": 0.84,
+        "StartTime": 25.56521739130434,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 11,
+        "Volume": 0.84,
+        "StartTime": 25.82608695652173,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 12,
+        "Volume": 0.84,
+        "StartTime": 26.086956521739122,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": 9,
+        "Volume": 0.84,
+        "StartTime": 27.130434782608685,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 8,
+        "Volume": 0.84,
+        "StartTime": 27.391304347826075,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 9,
+        "Volume": 0.84,
+        "StartTime": 27.652173913043466,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 11,
+        "Volume": 0.84,
+        "StartTime": 27.913043478260857,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 12,
+        "Volume": 0.84,
+        "StartTime": 28.173913043478247,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": 14,
+        "Volume": 0.84,
+        "StartTime": 28.69565217391303,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": 11,
+        "Volume": 0.84,
+        "StartTime": 29.21739130434781,
+        "Duration": 1.0434782608695652
+      },
+      {
+        "Pitch": 16,
+        "Volume": 0.84,
+        "StartTime": 30.260869565217376,
+        "Duration": 1.0434782608695652
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.84,
+        "StartTime": 31.304347826086943,
+        "Duration": 1.0434782608695652
+      },
+      {
+        "Pitch": 23,
+        "Volume": 0.84,
+        "StartTime": 32.34782608695651,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": 28,
+        "Volume": 0.84,
+        "StartTime": 32.86956521739129,
+        "Duration": 0.5217391304347826
+      }
+    ],
+    "Effects": {
+      "FadeOut": 0,
+      "FadeIn": 0,
+      "Rev": 0
+    }
+  },
+  {
+    "Instrument": "Piano",
+    "Content": [
+      {
+        "Pitch": -15,
+        "Volume": 0.64,
+        "StartTime": 0,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -8,
+        "Volume": 0.64,
+        "StartTime": 0.5217391304347826,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -3,
+        "Volume": 0.64,
+        "StartTime": 0.7826086956521738,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -20,
+        "Volume": 0.64,
+        "StartTime": 1.5652173913043477,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.64,
+        "StartTime": 2.0869565217391304,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -8,
+        "Volume": 0.64,
+        "StartTime": 2.608695652173913,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -3,
+        "Volume": 0.64,
+        "StartTime": 2.869565217391304,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -20,
+        "Volume": 0.64,
+        "StartTime": 3.652173913043478,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -19,
+        "Volume": 0.64,
+        "StartTime": 4.173913043478261,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -12,
+        "Volume": 0.64,
+        "StartTime": 4.695652173913043,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -7,
+        "Volume": 0.64,
+        "StartTime": 5.217391304347825,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -24,
+        "Volume": 0.64,
+        "StartTime": 5.7391304347826075,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -19,
+        "Volume": 0.64,
+        "StartTime": 6.26086956521739,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.64,
+        "StartTime": 8.34782608695652,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -8,
+        "Volume": 0.64,
+        "StartTime": 8.869565217391303,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -3,
+        "Volume": 0.64,
+        "StartTime": 9.130434782608694,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -20,
+        "Volume": 0.64,
+        "StartTime": 9.913043478260867,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.64,
+        "StartTime": 10.43478260869565,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -8,
+        "Volume": 0.64,
+        "StartTime": 10.956521739130434,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -3,
+        "Volume": 0.64,
+        "StartTime": 11.217391304347824,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -20,
+        "Volume": 0.64,
+        "StartTime": 11.999999999999998,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -19,
+        "Volume": 0.64,
+        "StartTime": 12.521739130434781,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -12,
+        "Volume": 0.64,
+        "StartTime": 13.043478260869565,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -7,
+        "Volume": 0.64,
+        "StartTime": 13.565217391304348,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -24,
+        "Volume": 0.64,
+        "StartTime": 14.08695652173913,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -19,
+        "Volume": 0.64,
+        "StartTime": 14.608695652173914,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -22,
+        "Volume": 0.64,
+        "StartTime": 16.695652173913047,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.64,
+        "StartTime": 17.217391304347828,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -10,
+        "Volume": 0.64,
+        "StartTime": 17.73913043478261,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -22,
+        "Volume": 0.64,
+        "StartTime": 18.26086956521739,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.64,
+        "StartTime": 18.52173913043478,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -20,
+        "Volume": 0.64,
+        "StartTime": 18.782608695652172,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -16,
+        "Volume": 0.64,
+        "StartTime": 19.304347826086953,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -16,
+        "Volume": 0.64,
+        "StartTime": 19.826086956521735,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -13,
+        "Volume": 0.64,
+        "StartTime": 20.347826086956516,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.64,
+        "StartTime": 20.869565217391298,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -8,
+        "Volume": 0.64,
+        "StartTime": 21.39130434782608,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.64,
+        "StartTime": 21.91304347826086,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -8,
+        "Volume": 0.64,
+        "StartTime": 22.43478260869564,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -18,
+        "Volume": 0.64,
+        "StartTime": 22.956521739130423,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.64,
+        "StartTime": 23.478260869565204,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -10,
+        "Volume": 0.64,
+        "StartTime": 23.478260869565204,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -22,
+        "Volume": 0.64,
+        "StartTime": 23.999999999999986,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.64,
+        "StartTime": 24.521739130434767,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -10,
+        "Volume": 0.64,
+        "StartTime": 24.521739130434767,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -19,
+        "Volume": 0.64,
+        "StartTime": 25.04347826086955,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -12,
+        "Volume": 0.64,
+        "StartTime": 25.82608695652172,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -19,
+        "Volume": 0.64,
+        "StartTime": 26.08695652173911,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -24,
+        "Volume": 0.48,
+        "StartTime": 26.608695652173893,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -19,
+        "Volume": 0.48,
+        "StartTime": 26.608695652173893,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -22,
+        "Volume": 0.64,
+        "StartTime": 27.130434782608674,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.64,
+        "StartTime": 27.913043478260846,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -10,
+        "Volume": 0.64,
+        "StartTime": 28.173913043478237,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -22,
+        "Volume": 0.64,
+        "StartTime": 28.695652173913018,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -20,
+        "Volume": 0.64,
+        "StartTime": 29.2173913043478,
+        "Duration": 0.2608695652173913
+      }
+    ],
+    "Effects": {
+      "FadeOut": 0,
+      "FadeIn": 0,
+      "Rev": 0
+    }
+  },
+  {
+    "Instrument": "Oboe",
+    "Content": [
+      {
+        "Pitch": 9,
+        "Volume": 0.8,
+        "StartTime": 25.04347826086956,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 8,
+        "Volume": 0.8,
+        "StartTime": 25.30434782608695,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 9,
+        "Volume": 0.8,
+        "StartTime": 25.56521739130434,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 11,
+        "Volume": 0.8,
+        "StartTime": 25.82608695652173,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 12,
+        "Volume": 0.8,
+        "StartTime": 26.086956521739122,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": 9,
+        "Volume": 0.8,
+        "StartTime": 27.130434782608685,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 8,
+        "Volume": 0.8,
+        "StartTime": 27.391304347826075,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 9,
+        "Volume": 0.8,
+        "StartTime": 27.652173913043466,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 11,
+        "Volume": 0.8,
+        "StartTime": 27.913043478260857,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 12,
+        "Volume": 0.8,
+        "StartTime": 28.173913043478247,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": 14,
+        "Volume": 0.8,
+        "StartTime": 28.69565217391303,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": 11,
+        "Volume": 0.8,
+        "StartTime": 29.21739130434781,
+        "Duration": 3.130434782608692
+      }
+    ],
+    "Effects": {
+      "FadeOut": 2,
+      "FadeIn": 0,
+      "Rev": 0
+    }
+  },
+  {
+    "Instrument": "PizzicatoStrings",
+    "Content": [
+      {
+        "Pitch": 21,
+        "Volume": 0.92,
+        "StartTime": 4.173913043478261,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.92,
+        "StartTime": 4.434782608695652,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 16,
+        "Volume": 0.92,
+        "StartTime": 4.695652173913044,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 19,
+        "Volume": 0.92,
+        "StartTime": 4.9565217391304355,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 18,
+        "Volume": 0.92,
+        "StartTime": 5.217391304347827,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 14,
+        "Volume": 0.92,
+        "StartTime": 5.478260869565219,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 17,
+        "Volume": 0.92,
+        "StartTime": 5.73913043478261,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 16,
+        "Volume": 0.92,
+        "StartTime": 6.000000000000002,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 12,
+        "Volume": 0.92,
+        "StartTime": 6.260869565217393,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.92,
+        "StartTime": 12.521739130434785,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.92,
+        "StartTime": 12.782608695652176,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 16,
+        "Volume": 0.92,
+        "StartTime": 13.043478260869566,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 19,
+        "Volume": 0.92,
+        "StartTime": 13.304347826086957,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 18,
+        "Volume": 0.92,
+        "StartTime": 13.565217391304348,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 14,
+        "Volume": 0.92,
+        "StartTime": 13.826086956521738,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 17,
+        "Volume": 0.92,
+        "StartTime": 14.086956521739129,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 16,
+        "Volume": 0.92,
+        "StartTime": 14.34782608695652,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 12,
+        "Volume": 0.92,
+        "StartTime": 14.60869565217391,
+        "Duration": 0.2608695652173913
+      }
+    ],
+    "Effects": {
+      "FadeOut": 0,
+      "FadeIn": 0,
+      "Rev": 0
+    }
+  },
+  {
+    "Instrument": "Cello",
+    "Content": [
+      {
+        "Pitch": -19,
+        "Volume": 0.64,
+        "StartTime": 7.304347826086956,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -18,
+        "Volume": 0.64,
+        "StartTime": 7.565217391304348,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.64,
+        "StartTime": 7.826086956521739,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -16,
+        "Volume": 0.64,
+        "StartTime": 8.08695652173913,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.64,
+        "StartTime": 8.347826086956522,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -12,
+        "Volume": 0.48,
+        "StartTime": 13.565217391304346,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -24,
+        "Volume": 0.48,
+        "StartTime": 14.086956521739129,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -19,
+        "Volume": 0.48,
+        "StartTime": 14.608695652173912,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -19,
+        "Volume": 0.64,
+        "StartTime": 15.913043478260867,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -20,
+        "Volume": 0.64,
+        "StartTime": 16.173913043478258,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -21,
+        "Volume": 0.64,
+        "StartTime": 16.43478260869565,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -22,
+        "Volume": 0.64,
+        "StartTime": 16.69565217391304,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -10,
+        "Volume": 0.64,
+        "StartTime": 20.086956521739125,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -12,
+        "Volume": 0.64,
+        "StartTime": 20.347826086956516,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -13,
+        "Volume": 0.64,
+        "StartTime": 20.608695652173907,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -12,
+        "Volume": 0.64,
+        "StartTime": 20.869565217391298,
+        "Duration": 1.0434782608695652
+      },
+      {
+        "Pitch": -13,
+        "Volume": 0.64,
+        "StartTime": 21.913043478260864,
+        "Duration": 1.0434782608695652
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.64,
+        "StartTime": 22.95652173913043,
+        "Duration": 1.0434782608695652
+      }
+    ],
+    "Effects": {
+      "FadeOut": 0,
+      "FadeIn": 0,
+      "Rev": 0
+    }
+  },
+  {
+    "Instrument": "Strings",
+    "Content": [
+      {
+        "Pitch": 9,
+        "Volume": 0.3675,
+        "StartTime": 8.347826086956522,
+        "Duration": 2.0869565217391304
+      },
+      {
+        "Pitch": 16,
+        "Volume": 0.3675,
+        "StartTime": 8.347826086956522,
+        "Duration": 2.0869565217391304
+      },
+      {
+        "Pitch": 9,
+        "Volume": 0.42,
+        "StartTime": 10.434782608695652,
+        "Duration": 2.0869565217391304
+      },
+      {
+        "Pitch": 12,
+        "Volume": 0.42,
+        "StartTime": 10.434782608695652,
+        "Duration": 2.0869565217391304
+      },
+      {
+        "Pitch": 9,
+        "Volume": 0.48,
+        "StartTime": 12.521739130434783,
+        "Duration": 2.0869565217391304
+      },
+      {
+        "Pitch": 15,
+        "Volume": 0.48,
+        "StartTime": 12.521739130434783,
+        "Duration": 2.0869565217391304
+      },
+      {
+        "Pitch": 5,
+        "Volume": 0.48,
+        "StartTime": 14.608695652173914,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 12,
+        "Volume": 0.48,
+        "StartTime": 14.608695652173914,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 17,
+        "Volume": 0.3675,
+        "StartTime": 16.695652173913043,
+        "Duration": 2.0869565217391304
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.3675,
+        "StartTime": 16.695652173913043,
+        "Duration": 2.0869565217391304
+      },
+      {
+        "Pitch": 16,
+        "Volume": 0.42,
+        "StartTime": 18.782608695652172,
+        "Duration": 2.0869565217391304
+      },
+      {
+        "Pitch": 24,
+        "Volume": 0.48,
+        "StartTime": 20.8695652173913,
+        "Duration": 2.0869565217391304
+      },
+      {
+        "Pitch": 26,
+        "Volume": 0.48,
+        "StartTime": 22.956521739130434,
+        "Duration": 2.0869565217391304
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.42,
+        "StartTime": 18.782608695652172,
+        "Duration": 1.0434782608695652
+      },
+      {
+        "Pitch": 23,
+        "Volume": 0.48,
+        "StartTime": 19.82608695652174,
+        "Duration": 1.0434782608695652
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.42,
+        "StartTime": 20.8695652173913,
+        "Duration": 1.0434782608695652
+      },
+      {
+        "Pitch": 19,
+        "Volume": 0.48,
+        "StartTime": 21.913043478260867,
+        "Duration": 1.0434782608695652
+      },
+      {
+        "Pitch": 18,
+        "Volume": 0.48,
+        "StartTime": 22.956521739130434,
+        "Duration": 1.0434782608695652
+      },
+      {
+        "Pitch": 14,
+        "Volume": 0.48,
+        "StartTime": 24,
+        "Duration": 1.0434782608695652
+      }
+    ],
+    "Effects": {
+      "FadeOut": 0,
+      "FadeIn": 0,
+      "Rev": 0
+    }
+  },
+  {
+    "Instrument": "CrashCymbal",
+    "Content": [
+      {
+        "Pitch": -11,
+        "Volume": 0.52,
+        "StartTime": 32.8695652173913,
+        "Duration": 0.5217391304347826
+      }
+    ],
+    "Effects": {
+      "FadeOut": 0,
+      "FadeIn": 0,
+      "Rev": 0
+    }
+  },
+  {
+    "Instrument": "BassDrum",
+    "Content": [
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 0,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 0.391304347826087,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 0.6521739130434783,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 1.3043478260869565,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 2.0869565217391304,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 2.4782608695652173,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 2.869565217391304,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 3.1304347826086953,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 3.3913043478260865,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 4.17391304347826,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 4.565217391304347,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 4.826086956521738,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 5.478260869565217,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 5.869565217391304,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 6.260869565217391,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 6.652173913043478,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 7.0434782608695645,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 7.17391304347826,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 7.304347826086955,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 8.347826086956522,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 8.73913043478261,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 9,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 9.652173913043478,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 10.434782608695652,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 10.82608695652174,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 11.217391304347828,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 11.478260869565219,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 11.73913043478261,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 12.521739130434783,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 12.913043478260871,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 13.173913043478262,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 13.82608695652174,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 14.217391304347828,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 14.608695652173916,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 15.000000000000004,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 15.391304347826091,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 15.521739130434787,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 15.652173913043482,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 16.695652173913047,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 17.086956521739133,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 17.347826086956523,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 18,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 18.782608695652172,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 19.173913043478258,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 19.565217391304344,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 19.826086956521735,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 20.086956521739125,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 20.869565217391298,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 21.260869565217384,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 21.521739130434774,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 22.17391304347825,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 22.565217391304337,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 22.956521739130423,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 23.34782608695651,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 23.739130434782595,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 23.86956521739129,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 23.999999999999986,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 25.043478260869552,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 25.434782608695638,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 25.69565217391303,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 26.347826086956506,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 27.130434782608678,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 27.521739130434764,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 27.91304347826085,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 28.17391304347824,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 28.43478260869563,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 29.217391304347803,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 29.60869565217389,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 29.86956521739128,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 30.521739130434757,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 30.913043478260843,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 31.30434782608693,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 31.695652173913015,
+        "Duration": 0.391304347826087
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 32.086956521739104,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 32.2173913043478,
+        "Duration": 0.13043478260869565
+      },
+      {
+        "Pitch": -25,
+        "Volume": 0.8,
+        "StartTime": 32.347826086956495,
+        "Duration": 0.2608695652173913
+      }
+    ],
+    "Effects": {
+      "FadeOut": 0,
+      "FadeIn": 0,
+      "Rev": 0
+    }
+  },
+  {
+    "Instrument": "HighFloorTom",
+    "Content": [
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 0.5217391304347826,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 2.608695652173913,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 4.695652173913043,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 6.782608695652172,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 8.869565217391303,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 10.956521739130435,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 13.043478260869568,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 15.1304347826087,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 17.217391304347828,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 19.304347826086953,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 21.39130434782608,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 23.478260869565204,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 25.56521739130433,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 27.652173913043455,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 29.73913043478258,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -17,
+        "Volume": 0.56,
+        "StartTime": 31.826086956521706,
+        "Duration": 0.5217391304347826
+      }
+    ],
+    "Effects": {
+      "FadeOut": 0,
+      "FadeIn": 0,
+      "Rev": 0
+    }
+  },
+  {
+    "Instrument": "LowTom",
+    "Content": [
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 1.5652173913043477,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 3.6521739130434785,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 5.7391304347826075,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 7.304347826086954,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 7.565217391304346,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 7.8260869565217375,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 8.086956521739129,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 9.91304347826087,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 12.000000000000002,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 14.086956521739134,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 15.652173913043484,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 15.913043478260875,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 16.173913043478265,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 16.434782608695656,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 18.26086956521739,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 20.347826086956516,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 22.43478260869564,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 23.999999999999986,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 24.260869565217376,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 24.521739130434767,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 24.782608695652158,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 26.608695652173893,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 28.695652173913018,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 30.782608695652144,
+        "Duration": 0.5217391304347826
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 32.34782608695649,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 32.60869565217388,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 32.86956521739127,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": -15,
+        "Volume": 0.72,
+        "StartTime": 33.13043478260866,
+        "Duration": 0.2608695652173913
+      }
+    ],
+    "Effects": {
+      "FadeOut": 0,
+      "FadeIn": 0,
+      "Rev": 0
+    }
+  },
+  {
+    "Instrument": "MuteTriangle",
+    "Content": [
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 0,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 0.5217391304347826,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 1.0434782608695652,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 1.565217391304348,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 2.0869565217391304,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 2.6086956521739126,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 3.130434782608695,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 3.652173913043477,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 4.17391304347826,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 4.695652173913043,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 5.217391304347826,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 5.739130434782609,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 6.2608695652173925,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 6.782608695652176,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 7.304347826086959,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 7.826086956521742,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 8.347826086956523,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 8.869565217391305,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 9.391304347826086,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 9.913043478260867,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 10.434782608695649,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 10.95652173913043,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 11.478260869565212,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 11.999999999999993,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 12.521739130434774,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 13.043478260869556,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 13.565217391304337,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 14.086956521739118,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 14.6086956521739,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 15.130434782608681,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 15.652173913043463,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 16.173913043478244,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 16.695652173913025,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 17.217391304347807,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 17.739130434782588,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 18.26086956521737,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 18.78260869565215,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 19.304347826086932,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 19.826086956521713,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 20.347826086956495,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 20.869565217391276,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 21.391304347826058,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 21.91304347826084,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 22.43478260869562,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 22.9565217391304,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 23.478260869565183,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 23.999999999999964,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 24.521739130434746,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 25.043478260869527,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 25.56521739130431,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 26.08695652173909,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 26.60869565217387,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 27.130434782608653,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 27.652173913043434,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 28.173913043478215,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 28.695652173912997,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 29.217391304347778,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 29.73913043478256,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 30.26086956521734,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 30.782608695652122,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 31.304347826086904,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 31.826086956521685,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 32.347826086956466,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 20,
+        "Volume": 0.48,
+        "StartTime": 32.86956521739125,
+        "Duration": 0.2608695652173913
+      }
+    ],
+    "Effects": {
+      "FadeOut": 0,
+      "FadeIn": 0,
+      "Rev": 0
+    }
+  },
+  {
+    "Instrument": "OpenTriangle",
+    "Content": [
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 0.2608695652173913,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 0.7826086956521738,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 1.3043478260869565,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 1.8260869565217392,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 2.3478260869565215,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 2.8695652173913038,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 3.391304347826086,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 3.9130434782608683,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 4.434782608695651,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 4.956521739130435,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 5.478260869565218,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 6.000000000000001,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 6.521739130434784,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 7.043478260869567,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 7.56521739130435,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 8.086956521739133,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 8.608695652173914,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 9.130434782608695,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 9.652173913043477,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 10.173913043478258,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 10.69565217391304,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 11.21739130434782,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 11.739130434782602,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 12.260869565217384,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 12.782608695652165,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 13.304347826086946,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 13.826086956521728,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 14.347826086956509,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 14.86956521739129,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 15.391304347826072,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 15.913043478260853,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 16.434782608695635,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 16.956521739130416,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 17.478260869565197,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 17.99999999999998,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 18.52173913043476,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 19.04347826086954,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 19.565217391304323,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 20.086956521739104,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 20.608695652173886,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 21.130434782608667,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 21.65217391304345,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 22.17391304347823,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 22.69565217391301,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 23.217391304347792,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 23.739130434782574,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 24.260869565217355,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 24.782608695652137,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 25.304347826086918,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 25.8260869565217,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 26.34782608695648,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 26.869565217391262,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 27.391304347826043,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 27.913043478260825,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 28.434782608695606,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 28.956521739130388,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 29.47826086956517,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 29.99999999999995,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 30.52173913043473,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 31.043478260869513,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 31.565217391304294,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 32.086956521739076,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 32.60869565217386,
+        "Duration": 0.2608695652173913
+      },
+      {
+        "Pitch": 21,
+        "Volume": 0.4,
+        "StartTime": 33.13043478260864,
+        "Duration": 0.2608695652173913
+      }
+    ],
+    "Effects": {
+      "FadeOut": 0,
+      "FadeIn": 0,
+      "Rev": 0
+    }
+  }
+]

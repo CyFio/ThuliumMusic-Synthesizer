@@ -31,5 +31,8 @@
     <None Include="test.output.json">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="test.output (1).json">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

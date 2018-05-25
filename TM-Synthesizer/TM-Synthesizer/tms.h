@@ -101,15 +101,19 @@ class tms
 
 	ifstream sff;
 
-	ifstream wavef;
+	ofstream wavef;
 
 	tms_input input;
 
-	tsf tiniSF;
+	tsf *tiniSF = nullptr; //函数tsf_load_filename返回的是一个指针，似乎tsf结构体是储存在堆内存中的。
 
 	//...
 
 	tms_output output;
+
+	bool synthesizer_track(int track_No);
+
+	bool mixer();
 
 public:
 
@@ -121,21 +125,36 @@ public:
 		this->setsf(sffp);
 	}
 
+	tms(const tms&) = delete;
+	tms& operator=(const tms&) = delete;
+
+	~tms()
+	{
+		tsf_close(tiniSF);
+	}
+
 	bool setjson(string jsonfp)
 	{
 		this->jsonf.open(jsonfp);
-		if (jsonf.is_open()) return 1;
-		else return 0;
+		if (jsonf.is_open()) return true;
+		else return false;
 	}
 
 	bool setsf(string sffp)
 	{
 		this->sff.open(sffp);
-		if (sff.is_open()) return 1;
-		else return 0;
+		if (sff.is_open()) return true;
+		else return false;
 	}
 
-	bool jsonInput();
+	bool setwavef(string wavefp)
+	{
+		this->wavef.open(wavefp);
+		if (wavef.is_open()) return true;
+		else return false;
+	}
+
+	bool jsonInput();//成功返回true，失败返回false
 
 	bool jsonInput(string jsonfp)
 	{
@@ -143,10 +162,44 @@ public:
 		else return this->jsonInput();
 	}
 
-	void sfInput();
+	bool sfInput(string sffp)
+	{
 
-	//...
+		tiniSF = tsf_load_filename(sffp.c_str());
+		if (tiniSF) return true;
+		else return false;
+	}
 
-	string operator()(string jsonfp, string sffp, string wavefp);
+	bool synthesizer()
+	{
+		bool correct = true;
+		for (int track_No = 0; track_No < input.numberOfTracks; ++track_No)
+			correct = correct && synthesizer_track(track_No);
+		correct = correct && mixer();
+		return correct;
+	}
+
+	bool wave_output();
+
+	bool wave_output(string wavefp)
+	{
+		if (!setwavef(wavefp)) return false;
+		else return wave_output();
+	}
+
+	bool operation(string jsonfp, string sffp, string wavefp)
+	{
+		bool correct = true;
+		correct = correct && jsonInput(jsonfp);
+		correct = correct && sfInput(sffp);
+		correct = correct && synthesizer();
+		correct = correct && wave_output(wavefp);
+		return correct;
+	}
+
+	bool operator()(string jsonfp, string sffp, string wavefp)
+	{
+		return operation(jsonfp, sffp, wavefp);
+	}
 };
 

@@ -115,13 +115,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="test.cpp" />
+    <ClCompile Include="tms.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tms.h" />
     <ClInclude Include="tsf.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="florestan-subset.sf2" />
     <None Include="test.output (1).json" />
     <None Include="test.output.json" />
   </ItemGroup>

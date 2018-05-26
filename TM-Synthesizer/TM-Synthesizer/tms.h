@@ -1,5 +1,9 @@
 #pragma once
 
+#include <iostream>
+#include <fstream>
+#include <string>
+
 using namespace std;
 
 /*
@@ -97,6 +101,12 @@ struct tms_output
 class tms
 {
 
+	string jsonfp;
+
+	string sffp;
+
+	string wavefp;
+
 	ifstream jsonf;
 
 	ifstream sff;
@@ -119,10 +129,11 @@ public:
 
 	tms() = default;
 
-	tms(string jsonfp, string sffp)
+	tms(const string& jsonfp, const string& sffp, const string& wavefp)
 	{
 		this->setjson(jsonfp);
 		this->setsf(sffp);
+		this->setwavef(wavefp);
 	}
 
 	tms(const tms&) = delete;
@@ -130,11 +141,15 @@ public:
 
 	~tms()
 	{
+		jsonf.close();
+		sff.close();
+		wavef.close();
 		tsf_close(tiniSF);
 	}
 
 	bool setjson(string jsonfp)
 	{
+		this->jsonfp = jsonfp;
 		this->jsonf.open(jsonfp);
 		if (jsonf.is_open()) return true;
 		else return false;
@@ -142,6 +157,7 @@ public:
 
 	bool setsf(string sffp)
 	{
+		this->sffp = sffp;
 		this->sff.open(sffp);
 		if (sff.is_open()) return true;
 		else return false;
@@ -149,10 +165,13 @@ public:
 
 	bool setwavef(string wavefp)
 	{
+		this->wavefp = wavefp;
 		this->wavef.open(wavefp);
 		if (wavef.is_open()) return true;
 		else return false;
 	}
+
+
 
 	bool jsonInput();//成功返回true，失败返回false
 
@@ -162,13 +181,20 @@ public:
 		else return this->jsonInput();
 	}
 
-	bool sfInput(string sffp)
+	bool sfInput()
 	{
-
 		tiniSF = tsf_load_filename(sffp.c_str());
 		if (tiniSF) return true;
 		else return false;
 	}
+
+	bool sfInput(string sffp)
+	{
+		this->sffp = sffp;
+		return sfInput();
+	}
+
+
 
 	bool synthesizer()
 	{
@@ -179,13 +205,15 @@ public:
 		return correct;
 	}
 
-	bool wave_output();
+	bool waveOutput();
 
-	bool wave_output(string wavefp)
+	bool waveOutput(string wavefp)
 	{
 		if (!setwavef(wavefp)) return false;
-		else return wave_output();
+		else return waveOutput();
 	}
+
+
 
 	bool operation(string jsonfp, string sffp, string wavefp)
 	{
@@ -193,7 +221,7 @@ public:
 		correct = correct && jsonInput(jsonfp);
 		correct = correct && sfInput(sffp);
 		correct = correct && synthesizer();
-		correct = correct && wave_output(wavefp);
+		correct = correct && waveOutput(wavefp);
 		return correct;
 	}
 
@@ -202,4 +230,3 @@ public:
 		return operation(jsonfp, sffp, wavefp);
 	}
 };
-

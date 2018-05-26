@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test.cpp">
+    <ClCompile Include="tms.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,6 +32,9 @@
       <Filter>资源文件</Filter>
     </None>
     <None Include="test.output (1).json">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="florestan-subset.sf2">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>

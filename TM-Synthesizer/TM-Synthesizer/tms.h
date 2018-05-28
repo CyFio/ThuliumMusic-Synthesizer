@@ -4,6 +4,8 @@
 #include <fstream>
 #include <string>
 
+#define PIT_OFFSET 60
+
 using namespace std;
 
 /*
@@ -87,14 +89,13 @@ struct tms_output
 
 	int numberOfWaves;
 
-	tms_wave *outwave = new tms_wave;
+	tms_wave outwave;
 
 	tms_output_settings settings;
 
 	~tms_output()
 	{
 		delete[] waves;
-		delete outwave;
 	}
 };
 
@@ -196,14 +197,14 @@ public:
 
 
 
-	bool synthesizer()
+	void setOutputDefault()
 	{
-		bool correct = true;
-		for (int track_No = 0; track_No < input.numberOfTracks; ++track_No)
-			correct = correct && synthesizer_track(track_No);
-		correct = correct && mixer();
-		return correct;
+		this->output.settings.bitsPerSample = 16;
+		this->output.settings.channels = 1;
+		this->output.settings.frequency = 44100;
 	}
+
+	bool synthesizer();
 
 	bool waveOutput();
 
@@ -218,6 +219,7 @@ public:
 	bool operation(string jsonfp, string sffp, string wavefp)
 	{
 		bool correct = true;
+		setOutputDefault();
 		correct = correct && jsonInput(jsonfp);
 		correct = correct && sfInput(sffp);
 		correct = correct && synthesizer();

@@ -1,0 +1,5 @@
+﻿  tms.cpp
+e:\橘圆亮\学习\编程\cpp\team project\tm-synthesizer\tm-synthesizer\tms.cpp(51): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+e:\橘圆亮\学习\编程\cpp\team project\tm-synthesizer\tm-synthesizer\tms.cpp(74): warning C4101: “highbits_wave”: 未引用的局部变量
+e:\橘圆亮\学习\编程\cpp\team project\tm-synthesizer\tm-synthesizer\tms.cpp(76): warning C4101: “lowbits_wave”: 未引用的局部变量
+  TM-Synthesizer.vcxproj -> E:\橘圆亮\学习\编程\cpp\team project\TM-Synthesizer\Debug\TM-Synthesizer.exe

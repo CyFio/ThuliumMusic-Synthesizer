@@ -1,6 +1,7 @@
 #define TSF_IMPLEMENTATION
 #include "tsf.h"
 
+
 #include "tms.h"
 
 bool tms::synthesizer()
@@ -98,13 +99,7 @@ bool tms::mixer()
 	return true;
 }
 
-tms tmsyn;
-
-int main()
-{
-	//tmsyn("florestan-subset.sf2", "test.output (1).json", "wave.wav");
-
-
-
+int main() {
 	return 0;
 }
+

@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="wav.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="tms.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="json.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -24,6 +30,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="tsf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="json.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="wav.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

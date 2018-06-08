@@ -1,9 +1,8 @@
 #pragma once
-
 #include <iostream>
 #include <fstream>
 #include <string>
-
+#include"wav.h"
 #define PIT_OFFSET 60
 
 using namespace std;
@@ -108,11 +107,7 @@ class tms
 
 	string wavefp;
 
-	ifstream jsonf;
-
 	ifstream sff;
-
-	ofstream wavef;
 
 	tms_input input;
 
@@ -138,22 +133,26 @@ public:
 	}
 
 	tms(const tms&) = delete;
+
 	tms& operator=(const tms&) = delete;
 
 	~tms()
 	{
-		jsonf.close();
+		//jsonf.close();
 		sff.close();
-		wavef.close();
+		//wavef.close();
 		tsf_close(tiniSF);
 	}
 
 	bool setjson(string jsonfp)
 	{
-		this->jsonfp = jsonfp;
-		this->jsonf.open(jsonfp);
-		if (jsonf.is_open()) return true;
-		else return false;
+		//this->jsonfp = jsonfp;
+		//this->jsonf.open(jsonfp);
+		//if (jsonf.is_open()) 
+		//	return true;
+		//else 
+			//return false;
+		return true;
 	}
 
 	bool setsf(string sffp)
@@ -166,13 +165,14 @@ public:
 
 	bool setwavef(string wavefp)
 	{
-		this->wavefp = wavefp;
-		this->wavef.open(wavefp);
-		if (wavef.is_open()) return true;
-		else return false;
+		//this->wavefp = wavefp;
+		//this->wavef.open(wavefp);
+		//if (wavef.is_open()) 
+		//	return true;
+		//else 
+		//	return false;
+		return true;
 	}
-
-
 
 	bool jsonInput();//成功返回true，失败返回false
 
@@ -195,8 +195,6 @@ public:
 		return sfInput();
 	}
 
-
-
 	void setOutputDefault()
 	{
 		this->output.settings.bitsPerSample = 16;
@@ -206,7 +204,12 @@ public:
 
 	bool synthesizer();
 
-	bool waveOutput();
+	bool waveOutput()
+	{
+		wavfile wav((BYTE*)output.outwave.samples, output.outwave.numberOfSamples * sizeof(float));
+		wav.save(wavefp.c_str());
+
+	}
 
 	bool waveOutput(string wavefp)
 	{

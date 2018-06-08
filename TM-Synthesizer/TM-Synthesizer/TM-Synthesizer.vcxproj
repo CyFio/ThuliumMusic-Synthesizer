@@ -115,11 +115,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="json.cpp" />
     <ClCompile Include="tms.cpp" />
+    <ClCompile Include="wav.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="json.h" />
     <ClInclude Include="tms.h" />
     <ClInclude Include="tsf.h" />
+    <ClInclude Include="wav.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="florestan-subset.sf2" />

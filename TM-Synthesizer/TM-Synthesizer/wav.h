@@ -16,7 +16,7 @@
 /*类声明*/
 class wavfile;
 /*全局函数声明*/
-bool wav_output
+bool wav_output//output wavefile with no extra infomation
 (
 	LPCSTR FileName,//Path of the File.wav
 	BYTE* wavedata, //Music data
@@ -24,8 +24,7 @@ bool wav_output
 	WORD nChannels = 0x0002,//Number of channels(default = 2)
 	DWORD nSamplesPerSec =44100,//Samples per second(default = 44.1kHz 
 	WORD  wBitsPerSample = 16, //bits per sample
-	WORD  wFormatTag = 0x0001,//PCM
-	LPCSTR lpAppendix = "Produced by Thulium"
+	WORD  wFormatTag = 0x0001//PCM
 );
 /*结构体定义*/
 struct RIFF_Header

@@ -26,6 +26,17 @@ bool wav_output//output wavefile with no extra infomation
 	WORD  wBitsPerSample = 16, //bits per sample
 	WORD  wFormatTag = 0x0001//PCM
 );
+bool wav_output//output wavefile with no extra infomation
+(
+	LPCSTR FileName,//Path of the File.wav
+	BYTE* wavedata, //Music data
+	DWORD bytecount, //Size of the data in bytes
+	LPCSTR lpAppendix, //infomation
+	WORD nChannels = 0x0002,//Number of channels(default = 2)
+	DWORD nSamplesPerSec = 44100,//Samples per second(default = 44.1kHz 
+	WORD  wBitsPerSample = 16, //bits per sample
+	WORD  wFormatTag = 0x0001//PCM
+);
 /*结构体定义*/
 struct RIFF_Header
 {

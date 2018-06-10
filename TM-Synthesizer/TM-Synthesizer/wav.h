@@ -58,8 +58,8 @@ private:
 public:
 	wavfile();
 	wavfile(LPCSTR filename);
-	wavfile(WAVEFORMATEX* header, BYTE* wavedata, size_t bytesize);
-	wavfile(BYTE* wavedata, size_t bytecount);
+	wavfile(WAVEFORMATEX* header, BYTE* wavedata, DWORD bytecount);
+	wavfile(BYTE* wavedata, DWORD bytecount);
 	bool load(const char*filename);
 	bool save(const char*filename);
 	~wavfile();

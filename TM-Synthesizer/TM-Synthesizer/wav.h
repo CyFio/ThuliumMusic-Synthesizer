@@ -40,35 +40,26 @@ bool wav_output//output wavefile with no extra infomation
 /*结构体定义*/
 struct RIFF_Header
 {
-	LPCSTR lpRiffID = "RIFF";
-	DWORD dwRiffSize;
-	LPSTR lpRiffFormat;
+	DWORD		dwRiffID;
+	DWORD		dwRiffSize;
+	DWORD		dwRiffFormat;
 };
 
 /*类定义*/
 class wavfile
 {
 private:
-	WAVEFORMATEX wavheader;
+	WAVEFORMATEX* wavheader;
 	BYTE* wavedata;
+	LPSTR lpFact;
+	DWORD dwRiffSize;
+	DWORD dwDataSize;
 	bool state;
 public:
 	wavfile();
 	wavfile(LPCSTR filename);
-	wavfile(WAVEFORMATEX& header, BYTE* wavedata, size_t bytesize);
+	wavfile(WAVEFORMATEX* header, BYTE* wavedata, size_t bytesize);
 	wavfile(BYTE* wavedata, size_t bytecount);
-	bool setFormat(WAVEFORMATEX& header);
-	//bool setHeader(tms_output_settings& settings);
-	bool setFormat
-	(
-		WORD        wFormatTag,
-		WORD        nChannels,         /* number of channels (i.e. mono, stereo...) */
-		DWORD       nSamplesPerSec,     /* sample rate */
-		DWORD       nAvgBytesPerSec,    /* for buffer estimation */
-		WORD        nBlockAlign,        /* block size of data */
-		WORD        wBitsPerSample,     /* number of bits per sample of mono data */
-		WORD        cbSize
-	);
 	bool load(const char*filename);
 	bool save(const char*filename);
 	~wavfile();

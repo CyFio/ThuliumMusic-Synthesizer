@@ -147,8 +147,9 @@ public:
 	{
 		//wavfile wav((BYTE*)output.outwave, output.settings.samples * sizeof(float));
 		//return wav.save(wavefp.c_str());
-		wav_output("test_track0.wav", this->output.waves[0], this->output.settings.samples * this->output.settings.bitsPerSample / 8 * 2);
-		return wav_output(this->wavefp.c_str(), this->output.outwave, this->output.settings.samples * this->output.settings.bitsPerSample / 8 * 2);
+		wav_output("test_track0.wav", this->output.waves[0], this->output.settings.samples * this->output.settings.bitsPerSample / 8);
+		wav_output("test_track1.wav", this->output.waves[1], this->output.settings.samples * this->output.settings.bitsPerSample / 8);
+		return wav_output(this->wavefp.c_str(), this->output.outwave, this->output.settings.samples * this->output.settings.bitsPerSample / 8);
 	}
 
 	bool waveOutput(string wavefp)

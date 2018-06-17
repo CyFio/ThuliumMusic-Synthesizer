@@ -14,7 +14,7 @@ void _mixer(BYTE** wave, int waves_num, int bytes_num, BYTE* outwave)
 		bit = 0;
 		for (int wave_No = 0; wave_No < waves_num; ++wave_No)
 		{
-			bit += (wave[wave_No][2 * samples_No] << 8) + wave[wave_No][2 * samples_No + 1];
+			bit += ((wave[wave_No][2 * samples_No] << 8) + wave[wave_No][2 * samples_No + 1]);
 		}
 		if (bit >= (1 << 16))
 			outwave[2 * samples_No] = outwave[2 * samples_No + 1] = (1 << 8) - 1;
@@ -43,7 +43,7 @@ bool tms::synthesizer()
 	this->output.waves = new BYTE*[this->input->numberOfTracks];
 	for (int track_No = 0; track_No < input->numberOfTracks; ++track_No)
 	{
-		this->output.waves[track_No] = new BYTE[this->output.settings.samples * this->output.settings.bitsPerSample / 8 * 2];
+		this->output.waves[track_No] = new BYTE[this->output.settings.samples * this->output.settings.bitsPerSample / 8];
 		correct = correct && synthesizer_track(track_No);
 	}
 	correct = correct && mixer();
@@ -66,7 +66,7 @@ bool tms::synthesizer_track(int track_No)
 	int presetIndex = 0;
 	for (; presetIndex < this->tiniSF->presetNum && track.settings.instrument != this->tiniSF->presets[presetIndex].presetName; ++presetIndex); //ÀÖÆ÷Æ¥Åä
 
-	for (; sample_No < samples; sample_No += block)
+	for (; sample_No < samples; sample_No += 2 * block)
 	{
 		if (sample_No + block > samples)
 		{
@@ -83,7 +83,13 @@ bool tms::synthesizer_track(int track_No)
 			tsf_note_off(tiniSF, presetIndex, track.notes[note_off_No].pit + PIT_OFFSET);
 		}
 
-		tsf_render_float(this->tiniSF, (float*)(wave + 4 * sample_No), block);
+		tsf_render_short(this->tiniSF, (short*)(wave + 2 * sample_No), block);
+		//if (time > 1)
+		//{
+		//	for (int i = 0; i < 8 * block; ++i) cout << (int)*(wave + 8 * sample_No + i) << ends;
+		//	char a[1];
+		//	cin.getline(a, 1);
+		//}
 	}
 
 	return true;
@@ -91,7 +97,7 @@ bool tms::synthesizer_track(int track_No)
 
 bool tms::mixer()
 {
-	this->output.outwave = new BYTE[this->output.settings.samples * this->output.settings.bitsPerSample / 8 * 2];
+	this->output.outwave = new BYTE[this->output.settings.samples * this->output.settings.bitsPerSample / 8];
 	_mixer(this->output.waves, this->output.numberOfWaves, this->output.settings.samples * this->output.settings.bitsPerSample / 8, this->output.outwave);
 	return true;
 }
@@ -106,4 +112,3 @@ int main()
 
 	return 0;
 }
-

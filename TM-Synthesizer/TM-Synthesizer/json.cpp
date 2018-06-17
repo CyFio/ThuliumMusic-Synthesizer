@@ -26,7 +26,7 @@ char* cJsonMusic_open(const char* fileName)
 	str = new char[count + 1];
 	//	cout << openfile.tellg() << endl;
 	openfile.close();
-	openfile.open("test.output.json");
+	openfile.open(fileName);
 	for (int i = 0; i < count; ++i)
 	{
 		openfile.get(a);

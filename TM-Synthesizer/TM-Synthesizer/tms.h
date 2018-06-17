@@ -2,7 +2,9 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include"wav.h"
+#include <Windows.h>
+#include "wav.h"
+#include "json.h"
 #define PIT_OFFSET 60
 
 using namespace std;
@@ -13,50 +15,6 @@ using namespace std;
 3、除音符开始和结束以外，其他音符事件（如滑音、音量衰减等）待定
 4、对多音轨合成暂无要求，是否需要对音轨加特技（Duang~）（淡入淡出等）待定
 */
-
-struct tms_note
-{
-	int pit;				//音高
-
-	double vol;				//音量
-
-	double time_start;		//音符开始时刻
-
-	double time_duration;	//音符持续时长
-};
-
-struct tms_track_settings
-{
-	string instrument;
-};
-
-struct tms_track
-{
-
-	tms_note *notes = nullptr;
-
-	int numberOfnotes;
-
-	tms_track_settings settings;
-
-	~tms_track()
-	{
-		delete[] notes;
-	}
-};
-
-struct tms_input
-{
-
-	tms_track *tracks = nullptr;
-
-	int numberOfTracks;
-
-	~tms_input()
-	{
-		delete[] tracks;
-	}
-};
 
 struct tms_output_settings
 {
@@ -69,26 +27,14 @@ struct tms_output_settings
 	int samples;		//PCM样本数量
 };
 
-struct tms_wave
-{
-	float *samples = nullptr;
-
-	int numberOfSamples;
-
-	~tms_wave()
-	{
-		delete[] samples;
-	}
-};
-
 struct tms_output
 {
 
-	tms_wave *waves = nullptr;
+	BYTE **waves = nullptr;
 
 	int numberOfWaves;
 
-	tms_wave outwave;
+	BYTE *outwave;
 
 	tms_output_settings settings;
 
@@ -109,7 +55,7 @@ class tms
 
 	ifstream sff;
 
-	tms_input input;
+	tms_input *input;
 
 	tsf *tiniSF = nullptr; //函数tsf_load_filename返回的是一个指针，似乎tsf结构体是储存在堆内存中的。
 
@@ -146,12 +92,7 @@ public:
 
 	bool setjson(string jsonfp)
 	{
-		//this->jsonfp = jsonfp;
-		//this->jsonf.open(jsonfp);
-		//if (jsonf.is_open()) 
-		//	return true;
-		//else 
-			//return false;
+		this->jsonfp = jsonfp;
 		return true;
 	}
 
@@ -165,16 +106,14 @@ public:
 
 	bool setwavef(string wavefp)
 	{
-		//this->wavefp = wavefp;
-		//this->wavef.open(wavefp);
-		//if (wavef.is_open()) 
-		//	return true;
-		//else 
-		//	return false;
+		this->wavefp = wavefp;
 		return true;
 	}
 
-	bool jsonInput();//成功返回true，失败返回false
+	bool jsonInput()//成功返回true，失败返回false
+	{
+		return cJsonMusic(this->input, this->jsonfp.c_str());
+	}
 
 	bool jsonInput(string jsonfp)
 	{
@@ -206,9 +145,10 @@ public:
 
 	bool waveOutput()
 	{
-		wavfile wav((BYTE*)output.outwave.samples, output.outwave.numberOfSamples * sizeof(float));
-		wav.save(wavefp.c_str());
-
+		//wavfile wav((BYTE*)output.outwave, output.settings.samples * sizeof(float));
+		//return wav.save(wavefp.c_str());
+		wav_output("test_track0.wav", this->output.waves[0], this->output.settings.samples * this->output.settings.bitsPerSample / 8 * 2);
+		return wav_output(this->wavefp.c_str(), this->output.outwave, this->output.settings.samples * this->output.settings.bitsPerSample / 8 * 2);
 	}
 
 	bool waveOutput(string wavefp)

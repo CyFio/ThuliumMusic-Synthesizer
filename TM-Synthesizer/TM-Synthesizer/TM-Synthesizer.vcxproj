@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -115,11 +116,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cJSON.c" />
     <ClCompile Include="json.cpp" />
     <ClCompile Include="tms.cpp" />
     <ClCompile Include="wav.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cJSON.h" />
     <ClInclude Include="json.h" />
     <ClInclude Include="tms.h" />
     <ClInclude Include="tsf.h" />
@@ -127,8 +130,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="florestan-subset.sf2" />
-    <None Include="test.output (1).json" />
     <None Include="test.output.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="test.wav" />
+    <Media Include="test_track0.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

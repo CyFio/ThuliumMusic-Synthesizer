@@ -33,6 +33,13 @@ void _mixer(BYTE** wave, int waves_num, int bytes_num, BYTE* outwave)
 
 bool tms::synthesizer()
 {
+	thread **track_thread = nullptr;
+	if (this->multiThreads)
+	{
+		track_thread = new thread*[this->input->numberOfTracks];
+		this->mutex = new bool[this->input->numberOfTracks];
+	}
+
 	bool correct = true;
 	double endtime = 0;
 	for (int track_No = 0; track_No < input->numberOfTracks; ++track_No)
@@ -47,14 +54,36 @@ bool tms::synthesizer()
 	for (int track_No = 0; track_No < input->numberOfTracks; ++track_No)
 	{
 		this->output.waves[track_No] = new BYTE[this->output.settings.samples * this->output.settings.bitsPerSample / 8];
-		correct = correct && synthesizer_track(track_No);
+		if (this->multiThreads)
+		{
+			track_thread[track_No] = new thread([](tms* tms0, int track_No) { tms0->synthesizer_track(track_No); }, this, track_No);
+			track_thread[track_No]->detach();
+		}
+		else
+			synthesizer_track(track_No);
+	}
+	if (this->multiThreads)
+	{
+		bool passed;
+		do {
+			passed = 1;
+			for (int track_No = 0; track_No < input->numberOfTracks; ++track_No)
+				passed = passed && this->mutex[track_No];
+		} while (!passed);
+
+		for (int track_No = 0; track_No < input->numberOfTracks; ++track_No)
+			delete track_thread[track_No];
+		delete track_thread;
+		delete this->mutex;
+		this->mutex = nullptr;
 	}
 	correct = correct && mixer();
 	return correct;
 }
 
-bool tms::synthesizer_track(int track_No)
+void tms::synthesizer_track(int track_No)
 {
+	if (this->multiThreads) this->mutex[track_No] = false;
 	double time = 0;
 	int sample_No = 0;
 	int note_on_No = 0;
@@ -68,7 +97,7 @@ bool tms::synthesizer_track(int track_No)
 
 	//if we use more than one SoundFont files, we find and load the matched SF file here.
 	if (!this->singleSF) tiniSF = tsf_load_filename(this->instru->getInstrument(this->input->tracks->settings.instrument.c_str()));
-	else tiniSF = this->tiniSF;
+	else tiniSF = tsf_load_filename(this->sffp.c_str());
 
 	//find the matched instrument in tsf.
 	int presetIndex = 0;
@@ -76,11 +105,11 @@ bool tms::synthesizer_track(int track_No)
 
 	tsf_set_output(tiniSF, this->output.settings.channels == 0 ? TSF_MONO : TSF_STEREO_INTERLEAVED, this->output.settings.frequency); // ‰≥ˆ…Ë÷√
 
-	for (; sample_No < samples; sample_No += 2 * block)
+	for (; sample_No < samples - 1; sample_No += 2 * block)
 	{
-		if (sample_No + block > samples)
+		if (sample_No + 2 * block > samples)
 		{
-			block = samples - sample_No;
+			block = (samples - sample_No) / 2;
 			interval = (double)block / (double)this->output.settings.frequency;
 		}
 		time += interval;
@@ -102,7 +131,9 @@ bool tms::synthesizer_track(int track_No)
 		//}
 	}
 
-	return true;
+	tsf_close(tiniSF);
+
+	if (this->multiThreads) this->mutex[track_No] = true;
 }
 
 bool tms::mixer()
@@ -116,7 +147,7 @@ tms tms1;
 
 int main()
 {
-	tms1("test.output2.json", "florestan-subset.sf2", "test.wav");
+	tms1("test.output2.json", "florestan-subset.sf2", "test.wav", 1);
 
 
 

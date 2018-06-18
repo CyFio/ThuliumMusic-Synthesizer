@@ -3,6 +3,7 @@
 #include <fstream>
 #include <string>
 #include <Windows.h>
+#include <thread>
 #include "wav.h"
 #include "json.h"
 #define PIT_OFFSET 60
@@ -40,7 +41,10 @@ struct tms_output
 
 	~tms_output()
 	{
+		for (int i = 0; i < numberOfWaves; ++i)
+			delete waves[i];
 		delete[] waves;
+		delete outwave;
 	}
 };
 
@@ -57,7 +61,11 @@ class tms
 
 	instrumentIndex *instru = nullptr;
 
-	tsf *tiniSF = nullptr; //函数tsf_load_filename返回的是一个指针，似乎tsf结构体是储存在堆内存中的。
+	//tsf *tiniSF = nullptr; //函数tsf_load_filename返回的是一个指针，似乎tsf结构体是储存在堆内存中的。
+
+	bool *mutex = nullptr;
+
+	bool multiThreads;
 
 	//...
 
@@ -65,11 +73,12 @@ class tms
 
 	bool singleSF;
 
-	bool synthesizer_track(int track_No);
 
 	bool mixer();
 
 public:
+
+	void synthesizer_track(int track_No);
 
 	tms() = default;
 
@@ -88,7 +97,8 @@ public:
 	{
 		delete input;
 		delete instru;
-		tsf_close(tiniSF);
+		delete mutex;
+		//tsf_close(tiniSF);
 	}
 
 	bool setjson(string jsonfp)
@@ -122,10 +132,11 @@ public:
 
 	bool sfInput()
 	{
-		tiniSF = tsf_load_filename(sffp.c_str());
+		//tiniSF = tsf_load_filename(sffp.c_str());
 		this->singleSF = true;
-		if (tiniSF) return true;
-		else return false;
+		//if (tiniSF) return true;
+		//else return false;
+		return true;
 	}
 
 	bool sfInput(string sffp)
@@ -173,9 +184,10 @@ public:
 
 
 
-	bool operation(string jsonfp, string sffp, string wavefp)
+	bool operation(string jsonfp, string sffp, string wavefp, bool multiThreads = true)
 	{
 		bool correct = true;
+		this->multiThreads = multiThreads;
 		setOutputDefault();
 		correct = correct && jsonInput(jsonfp);
 		correct = correct && sfInput(sffp);
@@ -184,8 +196,8 @@ public:
 		return correct;
 	}
 
-	bool operator()(string jsonfp, string sffp, string wavefp)
+	bool operator()(string jsonfp, string sffp, string wavefp, bool multiThreads = true)
 	{
-		return operation(jsonfp, sffp, wavefp);
+		return operation(jsonfp, sffp, wavefp, multiThreads);
 	}
 };

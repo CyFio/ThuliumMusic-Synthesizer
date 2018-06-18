@@ -7,21 +7,26 @@ using namespace std;
 void _mixer(BYTE** wave, int waves_num, int bytes_num, BYTE* outwave)
 {
 	int bit;
-	double divisor = 1;
+	double divisor = 2;
 	int samples_num = bytes_num / 2;
 	for (int samples_No = 0; samples_No < samples_num; ++samples_No)
 	{
 		bit = 0;
 		for (int wave_No = 0; wave_No < waves_num; ++wave_No)
 		{
-			bit += ((wave[wave_No][2 * samples_No] << 8) + wave[wave_No][2 * samples_No + 1]);
+			WORD a = (wave[wave_No][2 * samples_No]) + (wave[wave_No][2 * samples_No + 1] << 8);
+			bit += (short&)a;
 		}
-		//if (bit >= (1 << 16))
-		//	outwave[2 * samples_No] = outwave[2 * samples_No + 1] = (1 << 8) - 1;
-		//else
+		bit /= divisor;
+		if (bit >= (1 << 15))
 		{
-			outwave[2 * samples_No] = (int)(bit / divisor) >> 8;
-			outwave[2 * samples_No + 1] = bit / divisor;
+			outwave[2 * samples_No] = (1 << 8) - 1;
+			outwave[2 * samples_No + 1] = (1 << 7) - 1;
+		}
+		else
+		{
+			outwave[2 * samples_No] = bit;
+			outwave[2 * samples_No + 1] = (int)(bit) >> 8;
 		}
 	}
 }
@@ -59,15 +64,17 @@ bool tms::synthesizer_track(int track_No)
 	const int samples = this->output.settings.samples;
 	const tms_track &track = this->input->tracks[track_No];
 	BYTE *&wave = this->output.waves[track_No];
+	tsf *tiniSF = nullptr;
 
 	//if we use more than one SoundFont files, we find and load the matched SF file here.
-	if (!this->singleSF) this->tiniSF = tsf_load_filename(this->instru->getInstrument(this->input->tracks->settings.instrument.c_str()));
+	if (!this->singleSF) tiniSF = tsf_load_filename(this->instru->getInstrument(this->input->tracks->settings.instrument.c_str()));
+	else tiniSF = this->tiniSF;
 
 	//find the matched instrument in tsf.
 	int presetIndex = 0;
-	for (; presetIndex < this->tiniSF->presetNum && track.settings.instrument != this->tiniSF->presets[presetIndex].presetName; ++presetIndex); //¿÷∆˜∆•≈‰
+	for (; presetIndex < tiniSF->presetNum && track.settings.instrument != tiniSF->presets[presetIndex].presetName; ++presetIndex); //¿÷∆˜∆•≈‰
 
-	tsf_set_output(this->tiniSF, this->output.settings.channels == 0 ? TSF_MONO : TSF_STEREO_INTERLEAVED, this->output.settings.frequency); // ‰≥ˆ…Ë÷√
+	tsf_set_output(tiniSF, this->output.settings.channels == 0 ? TSF_MONO : TSF_STEREO_INTERLEAVED, this->output.settings.frequency); // ‰≥ˆ…Ë÷√
 
 	for (; sample_No < samples; sample_No += 2 * block)
 	{
@@ -86,7 +93,7 @@ bool tms::synthesizer_track(int track_No)
 			tsf_note_off(tiniSF, presetIndex, track.notes[note_off_No].pit + PIT_OFFSET);
 		}
 
-		tsf_render_short(this->tiniSF, (short*)(wave + 2 * sample_No), block);
+		tsf_render_short(tiniSF, (short*)(wave + 2 * sample_No), block);
 		//if (time > 1)
 		//{
 		//	for (int i = 0; i < 8 * block; ++i) cout << (int)*(wave + 8 * sample_No + i) << ends;
@@ -109,7 +116,7 @@ tms tms1;
 
 int main()
 {
-	tms1("test.output.json", "florestan-subset.sf2", "test.wav");
+	tms1("test.output2.json", "florestan-subset.sf2", "test.wav");
 
 
 

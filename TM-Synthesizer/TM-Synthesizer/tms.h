@@ -34,7 +34,7 @@ struct tms_output
 
 	int numberOfWaves;
 
-	BYTE *outwave;
+	BYTE *outwave = nullptr;
 
 	tms_output_settings settings;
 
@@ -53,15 +53,17 @@ class tms
 
 	string wavefp;
 
-	ifstream sff;
+	tms_input *input = nullptr;
 
-	tms_input *input;
+	instrumentIndex *instru = nullptr;
 
 	tsf *tiniSF = nullptr; //函数tsf_load_filename返回的是一个指针，似乎tsf结构体是储存在堆内存中的。
 
 	//...
 
 	tms_output output;
+
+	bool singleSF;
 
 	bool synthesizer_track(int track_No);
 
@@ -84,9 +86,8 @@ public:
 
 	~tms()
 	{
-		//jsonf.close();
-		sff.close();
-		//wavef.close();
+		delete input;
+		delete instru;
 		tsf_close(tiniSF);
 	}
 
@@ -99,9 +100,7 @@ public:
 	bool setsf(string sffp)
 	{
 		this->sffp = sffp;
-		this->sff.open(sffp);
-		if (sff.is_open()) return true;
-		else return false;
+		return true;
 	}
 
 	bool setwavef(string wavefp)
@@ -124,6 +123,7 @@ public:
 	bool sfInput()
 	{
 		tiniSF = tsf_load_filename(sffp.c_str());
+		this->singleSF = true;
 		if (tiniSF) return true;
 		else return false;
 	}
@@ -132,6 +132,19 @@ public:
 	{
 		this->sffp = sffp;
 		return sfInput();
+	}
+
+	bool sfInput2()
+	{
+		instru = new instrumentIndex(this->sffp.c_str());
+		this->singleSF = false;
+		return instru->fail();
+	}
+
+	bool sfInput2(string sffp)
+	{
+		this->sffp = sffp;
+		return sfInput2();
 	}
 
 	void setOutputDefault()

@@ -129,6 +129,70 @@ bool cJsonMusic(tms_input*& music, const char* fileName)
 	return true;
 }
 
+instrumentIndex::instrumentIndex(const char* fileName)
+{
+	state = 1;
+	char* str;
+	unsigned int count = 0;
+	char a;
+	ifstream openfile(fileName);//xx代表文件位置及名称
+	if (!openfile)
+	{
+		cout << "open failed!" << endl;
+		state = 0;
+	}
+
+	do {
+		openfile.get(a);
+		count++;
+		if (openfile.eof())
+			break;
+	} while (!openfile.eof());
+	cout << state;
+	//cout << count;
+	//cout << endl;
+
+	str = new char[count + 1];
+	//	cout << openfile.tellg() << endl;
+	openfile.close();
+	openfile.open(fileName);
+	for (int i = 0; i < count; ++i)
+	{
+		openfile.get(a);
+		str[i] = a;
+	}
+	openfile.close();
+	str[count - 1] = '\0';
+	//	cout << s;
+	cout << str;
+	Index = cJSON_Parse(str);
+	delete[]str;
+	if (!Index)
+	{
+		state = 0;
+		cout << "get str failed!";
+	}
+	cout << state;
+}
+
+instrumentIndex::~instrumentIndex()
+{
+
+}
+
+const char* instrumentIndex::getInstrument(const char* instrumentName)
+{
+	char*s = 0;
+	s = cJSON_GetObjectItem(Index, instrumentName)->valuestring;
+	return s;
+}
+
+bool instrumentIndex::fail()
+{
+	return state;
+}
+
+
 //int main()
 //{
 //	tms_input* test = 0;

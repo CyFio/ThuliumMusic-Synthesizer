@@ -7,7 +7,7 @@ using namespace std;
 void _mixer(BYTE** wave, int waves_num, int bytes_num, BYTE* outwave)
 {
 	int bit;
-	double divisor = 3;
+	double divisor = 1;
 	int samples_num = bytes_num / 2;
 	for (int samples_No = 0; samples_No < samples_num; ++samples_No)
 	{
@@ -16,9 +16,9 @@ void _mixer(BYTE** wave, int waves_num, int bytes_num, BYTE* outwave)
 		{
 			bit += ((wave[wave_No][2 * samples_No] << 8) + wave[wave_No][2 * samples_No + 1]);
 		}
-		if (bit >= (1 << 16))
-			outwave[2 * samples_No] = outwave[2 * samples_No + 1] = (1 << 8) - 1;
-		else
+		//if (bit >= (1 << 16))
+		//	outwave[2 * samples_No] = outwave[2 * samples_No + 1] = (1 << 8) - 1;
+		//else
 		{
 			outwave[2 * samples_No] = (int)(bit / divisor) >> 8;
 			outwave[2 * samples_No + 1] = bit / divisor;
@@ -37,8 +37,6 @@ bool tms::synthesizer()
 			endtime = endtime_track;
 	}
 	this->output.settings.samples = (int)((endtime + 1) * this->output.settings.frequency * 2); //估计样本数量
-
-	tsf_set_output(this->tiniSF, TSF_STEREO_INTERLEAVED, this->output.settings.frequency);
 
 	this->output.waves = new BYTE*[this->input->numberOfTracks];
 	for (int track_No = 0; track_No < input->numberOfTracks; ++track_No)
@@ -61,10 +59,15 @@ bool tms::synthesizer_track(int track_No)
 	const int samples = this->output.settings.samples;
 	const tms_track &track = this->input->tracks[track_No];
 	BYTE *&wave = this->output.waves[track_No];
-	tsf_set_output(this->tiniSF, this->output.settings.channels == 0 ? TSF_MONO : TSF_STEREO_INTERLEAVED, this->output.settings.frequency); //输出设置
 
+	//if we use more than one SoundFont files, we find and load the matched SF file here.
+	if (!this->singleSF) this->tiniSF = tsf_load_filename(this->instru->getInstrument(this->input->tracks->settings.instrument.c_str()));
+
+	//find the matched instrument in tsf.
 	int presetIndex = 0;
 	for (; presetIndex < this->tiniSF->presetNum && track.settings.instrument != this->tiniSF->presets[presetIndex].presetName; ++presetIndex); //乐器匹配
+
+	tsf_set_output(this->tiniSF, this->output.settings.channels == 0 ? TSF_MONO : TSF_STEREO_INTERLEAVED, this->output.settings.frequency); //输出设置
 
 	for (; sample_No < samples; sample_No += 2 * block)
 	{
@@ -98,7 +101,7 @@ bool tms::synthesizer_track(int track_No)
 bool tms::mixer()
 {
 	this->output.outwave = new BYTE[this->output.settings.samples * this->output.settings.bitsPerSample / 8];
-	_mixer(this->output.waves, this->output.numberOfWaves, this->output.settings.samples * this->output.settings.bitsPerSample / 8, this->output.outwave);
+	_mixer(this->output.waves, this->input->numberOfTracks, this->output.settings.samples * this->output.settings.bitsPerSample / 8, this->output.outwave);
 	return true;
 }
 

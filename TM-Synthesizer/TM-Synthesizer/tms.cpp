@@ -147,7 +147,7 @@ tms tms1;
 
 int main()
 {
-	tms1("test.output2.json", "florestan-subset.sf2", "test.wav", 1);
+	tms1("test.output2.json", "florestan-subset.sf2", "test.wav", true);
 
 
 

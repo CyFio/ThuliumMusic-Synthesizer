@@ -4,10 +4,9 @@
 
 using namespace std;
 
-void _mixer(BYTE** wave, int waves_num, int bytes_num, BYTE* outwave)
+void _mixer(BYTE** wave, int waves_num, int bytes_num, BYTE* outwave, double divisor = 1)
 {
 	int bit;
-	double divisor = 2;
 	int samples_num = bytes_num / 2;
 	for (int samples_No = 0; samples_No < samples_num; ++samples_No)
 	{
@@ -19,15 +18,11 @@ void _mixer(BYTE** wave, int waves_num, int bytes_num, BYTE* outwave)
 		}
 		bit /= divisor;
 		if (bit >= (1 << 15))
-		{
-			outwave[2 * samples_No] = (1 << 8) - 1;
-			outwave[2 * samples_No + 1] = (1 << 7) - 1;
-		}
+			(WORD&)outwave[2 * samples_No] = (1 << 15) - 1;
+		else if (bit <= -(1 << 15))
+			(WORD&)outwave[2 * samples_No] = (1 << 15);
 		else
-		{
-			outwave[2 * samples_No] = bit;
-			outwave[2 * samples_No + 1] = (int)(bit) >> 8;
-		}
+			(WORD&)outwave[2 * samples_No] = (WORD&)bit;
 	}
 }
 
@@ -139,7 +134,7 @@ void tms::synthesizer_track(int track_No)
 bool tms::mixer()
 {
 	this->output.outwave = new BYTE[this->output.settings.samples * this->output.settings.bitsPerSample / 8];
-	_mixer(this->output.waves, this->input->numberOfTracks, this->output.settings.samples * this->output.settings.bitsPerSample / 8, this->output.outwave);
+	_mixer(this->output.waves, this->input->numberOfTracks, this->output.settings.samples * this->output.settings.bitsPerSample / 8, this->output.outwave, 2.0);
 	return true;
 }
 
@@ -147,7 +142,8 @@ tms tms1;
 
 int main()
 {
-	tms1("test.output2.json", "florestan-subset.sf2", "test.wav", true);
+	//tms1("test.output2.json", "florestan-subset.sf2", "test.wav", true);
+	tms1("test.output2.json", "Instrument1.json", "test.wav", true);
 
 
 

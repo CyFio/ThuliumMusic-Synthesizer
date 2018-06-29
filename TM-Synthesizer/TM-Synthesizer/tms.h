@@ -190,7 +190,7 @@ public:
 		this->multiThreads = multiThreads;
 		setOutputDefault();
 		correct = correct && jsonInput(jsonfp);
-		correct = correct && sfInput(sffp);
+		correct = correct && sfInput2(sffp);
 		correct = correct && synthesizer();
 		correct = correct && waveOutput(wavefp);
 		return correct;
